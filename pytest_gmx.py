@@ -11,7 +11,6 @@ def pytest_addoption(parser):
             help='Instruct gromacs to run on low performance mode',
     )
     
-
 @pytest.fixture
 def low_performance(request):
     return request.config.option.low_performance
